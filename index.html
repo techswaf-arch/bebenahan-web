@@ -163,9 +163,149 @@
     <section class="section" id="contoh">
       <div class="wrap">
         <h2>Contoh hasil</h2>
+        <p class="section__intro">Lima contoh sebelum dan sesudah. Semuanya memakai data rekaan untuk menunjukkan bentuk hasil kerja kami, bukan pekerjaan klien.</p>
+
+        <div class="demo-tabs" role="tablist" aria-label="Pilih contoh hasil">
+          <button type="button" role="tab" id="tab-dokumen" aria-controls="contoh-dokumen" aria-selected="true">Dokumen</button>
+          <button type="button" role="tab" id="tab-konten" aria-controls="contoh-konten" aria-selected="false" tabindex="-1">Konten</button>
+          <button type="button" role="tab" id="tab-rekap" aria-controls="contoh-rekap" aria-selected="false" tabindex="-1">Rekap data</button>
+          <button type="button" role="tab" id="tab-terjemahan" aria-controls="contoh-terjemahan" aria-selected="false" tabindex="-1">Terjemahan</button>
+          <button type="button" role="tab" id="tab-listing" aria-controls="contoh-listing" aria-selected="false" tabindex="-1">Listing toko</button>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="contoh-dokumen" aria-labelledby="tab-dokumen">
+          <h3>CV yang berantakan jadi CV siap kirim</h3>
+          <div class="demo-pair">
+            <figure class="paper paper--before">
+              <figcaption>Sebelum</figcaption>
+              <p class="scrap">cv budi
+nama budi santoso, umur 23 th, tinggal di banjarmasin
+pernah kerja di toko bangunan 2 thn kasir &amp; jaga gudang
+lulusan SMK 2019 jurusan akuntansi
+bisa excel word, rajin jujur, siap kerja shift
+hp 08xx-xxxx-xxxx</p>
+            </figure>
+            <figure class="paper paper--after">
+              <figcaption>Sesudah</figcaption>
+              <div class="cv">
+                <p class="cv__name">Budi Santoso</p>
+                <p class="cv__role">Kasir dan staf administrasi, Banjarmasin</p>
+                <h4>Ringkasan</h4>
+                <p>Lulusan SMK Akuntansi dengan pengalaman 2 tahun sebagai kasir dan penjaga gudang. Terbiasa memakai Excel dan Word, teliti, dan siap bekerja shift.</p>
+                <h4>Pengalaman</h4>
+                <p><strong>Kasir dan penjaga gudang</strong>, toko bangunan (2 tahun). Melayani pembayaran dan menjaga kerapian stok barang di gudang.</p>
+                <h4>Pendidikan</h4>
+                <p>SMK jurusan Akuntansi, lulus 2019.</p>
+                <h4>Keahlian</h4>
+                <p>Microsoft Excel, Microsoft Word, pelayanan pelanggan.</p>
+                <h4>Kontak</h4>
+                <p>08xx-xxxx-xxxx</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="contoh-konten" aria-labelledby="tab-konten">
+          <h3>Dari "posting jualan terus" jadi kalender konten</h3>
+          <div class="demo-pair">
+            <figure class="paper paper--before">
+              <figcaption>Sebelum</figcaption>
+              <p class="scrap">posting: jualan terus
+kadang foto kadang tidak
+caption: "ayo beli soto"
+kapan posting? kalau ingat</p>
+            </figure>
+            <figure class="paper paper--after">
+              <figcaption>Sesudah: warung soto Banjar (contoh)</figcaption>
+              <ul class="plan">
+                <li><strong>Senin</strong> Foto semangkuk soto hangat untuk menu pagi</li>
+                <li><strong>Selasa</strong> Video singkat kuah dituang ke mangkuk</li>
+                <li><strong>Rabu</strong> Polling di Story: pakai ketupat atau lontong?</li>
+                <li><strong>Kamis</strong> Di balik dapur: meracik bumbu sejak subuh</li>
+                <li><strong>Jumat</strong> Paket makan keluarga untuk akhir pekan</li>
+              </ul>
+              <p class="caption-sample"><strong>Contoh caption.</strong> Pagi paling enak ditemani yang hangat. Soto Banjar kuah bening, ketupat, dan perkedel, siap sejak jam 6. Mampir sebelum kehabisan. #SotoBanjar #KulinerKalsel</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="contoh-rekap" aria-labelledby="tab-rekap">
+          <h3>Nota berserakan jadi rekap yang bisa dihitung</h3>
+          <div class="demo-pair">
+            <figure class="paper paper--before">
+              <figcaption>Sebelum</figcaption>
+              <p class="scrap">gula 5kg @14rb = 70rb
+minyak 2 lt 32.000
+telur 1 rak 52 rb
+kopi bubuk 3 bks @9000
+total? belum dihitung</p>
+            </figure>
+            <figure class="paper paper--after">
+              <figcaption>Sesudah</figcaption>
+              <div class="table-wrap">
+                <table class="rekap">
+                  <caption class="sr-only">Rekap belanja</caption>
+                  <thead>
+                    <tr><th scope="col">Barang</th><th scope="col">Jumlah</th><th scope="col" class="num">Harga</th><th scope="col" class="num">Subtotal</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Gula pasir</th><td>5 kg</td><td class="num">14.000</td><td class="num">70.000</td></tr>
+                    <tr><th scope="row">Minyak goreng</th><td>2 liter</td><td class="num">16.000</td><td class="num">32.000</td></tr>
+                    <tr><th scope="row">Telur</th><td>1 rak</td><td class="num">52.000</td><td class="num">52.000</td></tr>
+                    <tr><th scope="row">Kopi bubuk</th><td>3 bungkus</td><td class="num">9.000</td><td class="num">27.000</td></tr>
+                  </tbody>
+                  <tfoot>
+                    <tr><th scope="row" colspan="3">Total</th><td class="num">Rp181.000</td></tr>
+                  </tfoot>
+                </table>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="contoh-terjemahan" aria-labelledby="tab-terjemahan">
+          <h3>Terjemahan kaku jadi terjemahan yang wajar dibaca</h3>
+          <div class="demo-pair">
+            <figure class="paper paper--before">
+              <figcaption>Sebelum: terjemahan mentah</figcaption>
+              <p class="scrap">Keripik pisang kami digoreng dari pisang segar tanpa bahan pengawet. Cocok jadi oleh-oleh.
+
+Our banana chip fry from fresh banana without material preserve. Suitable become souvenir.</p>
+            </figure>
+            <figure class="paper paper--after">
+              <figcaption>Sesudah</figcaption>
+              <p class="prose">Keripik pisang kami digoreng dari pisang segar tanpa bahan pengawet. Cocok jadi oleh-oleh.</p>
+              <p class="prose prose--en" lang="en">Our banana chips are fried from fresh bananas, with no preservatives. A great souvenir to bring home.</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="contoh-listing" aria-labelledby="tab-listing">
+          <h3>Listing seadanya jadi listing yang mudah ditemukan</h3>
+          <div class="demo-pair">
+            <figure class="paper paper--before">
+              <figcaption>Sebelum</figcaption>
+              <p class="scrap">Judul: keripik pisang enak murah
+
+Deskripsi: keripik pisang enak banget murah, beli aja</p>
+            </figure>
+            <figure class="paper paper--after">
+              <figcaption>Sesudah</figcaption>
+              <p class="listing__title">Keripik Pisang Kepok 250 g, Renyah, Tanpa Pengawet, Oleh-oleh Khas Kalimantan</p>
+              <ul class="listing">
+                <li><strong>Bahan</strong> Pisang kepok pilihan, digoreng segar</li>
+                <li><strong>Berat</strong> 250 g per kemasan</li>
+                <li><strong>Varian</strong> Original dan cokelat</li>
+                <li><strong>Simpan</strong> Tutup rapat setelah dibuka agar tetap renyah</li>
+                <li><strong>Cocok untuk</strong> Camilan keluarga dan oleh-oleh</li>
+              </ul>
+            </figure>
+          </div>
+        </div>
+
         <div class="sheet-note">
-          <p class="sheet-note__lead">Contoh sebelum dan sesudah sedang kami siapkan.</p>
-          <p>Ingin jadi klien awal? Klien pertama mendapat harga perkenalan, dan hasil kerjanya hanya kami tampilkan di sini dengan izin Anda.</p>
+          <p class="sheet-note__lead">Mau bahan Anda dibenahi seperti ini?</p>
+          <p>Klien pertama mendapat harga perkenalan, dan hasil kerjanya hanya kami tampilkan di sini dengan izin Anda.</p>
           <a class="btn" href="mailto:bebenahan@gmail.com?subject=Klien%20awal%20Bebenahan">Daftar jadi klien awal</a>
         </div>
       </div>

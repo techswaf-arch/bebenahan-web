@@ -17,7 +17,8 @@ Tanpa framework dan tanpa proses build, jadi cukup buka `index.html` di browser 
 
 - **Harga**: bagian `<ul class="services">` di `index.html`
 - **Nomor WhatsApp**: cari komentar `WhatsApp` di `index.html`, lalu tambahkan tombol dengan tautan `https://wa.me/62xxxxxxxxxx`. Pakai nomor khusus usaha, karena nomor ini akan terlihat publik.
-- **Contoh hasil dan testimoni**: bagian `id="contoh"`. Tampilkan hanya dengan izin klien.
+- **Contoh hasil**: bagian `id="contoh"` berisi lima contoh sebelum dan sesudah dengan **data rekaan**, dan diberi label begitu di halaman. Jangan menaruh nama atau data klien sungguhan di sini tanpa izin tertulis. Jika nanti memakai hasil kerja asli, ubah labelnya agar tidak menyesatkan.
+- **Testimoni**: belum ada. Tambahkan hanya kutipan asli dari klien yang mengizinkan.
 
 ## Menayangkan dengan GitHub Pages
 
